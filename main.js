@@ -1,3 +1,4 @@
+
 import {  fetch_cat_facts, post_cat_fact } from "./api.js";
 import { render_facts, get_new_fact_Input, clear_input } from "./ui.js";
 
@@ -29,3 +30,5 @@ const addFact = async () => {
 
 document.getElementById("add-fact-button").addEventListener("click", addFact);
 window.onload = loadFacts;
+
+// console.log(post_cat_fact);
