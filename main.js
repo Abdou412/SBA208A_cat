@@ -1,11 +1,11 @@
-import { fetc_hcat_facts, post_cat_fact } from "./api.js";
+import {  fetch_cat_facts, post_cat_fact } from "./api.js";
 import { render_facts, get_new_fact_Input, clear_input } from "./ui.js";
 
 const facts = [];
 
 const loadFacts = async () => {
   try {
-    const data = await fetc_hcat_facts();
+    const data = await fetch_cat_facts();
     facts.push(data.fact);
     render_facts(facts);
   } catch (error) {

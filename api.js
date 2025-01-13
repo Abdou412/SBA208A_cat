@@ -1,6 +1,6 @@
 const API_URL = "https://catfact.ninja/fact";
 
-export const fetc_hcat_facts = async () => {
+export const fetch_cat_facts = async () => {
   const response = await fetch(API_URL);
   if (!response.ok) throw new Error("Failed to fetch data");
   return await response.json();
